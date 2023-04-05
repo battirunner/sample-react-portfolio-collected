@@ -1,0 +1,51 @@
+#project {
+    padding-top: 6rem;
+}
+
+.sliders {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.fade-left {
+
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+.fade-left-appear {
+    
+    transition: transform 500ms ease-in;
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.fade-right {
+    transform: translateX(50%);
+    opacity: 0;
+}
+
+.fade-right-appear {
+    
+    transition: transform 500ms ease-in;
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.image-holder image img {
+    width: 212px;
+    height: 119px;
+    border-radius: 8px;
+    filter: drop-shadow(3px 3px 3px black)
+}
+
+.project-container {
+    margin: 15px auto 15px 0;
+}
+
+.project-container > .title {
+    padding: 10px 0 10px 0;
+}
